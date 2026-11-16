@@ -14,7 +14,7 @@ If your file picker hides .nojekyll, it can be added separately in GitHub with A
 
 The app uses relative paths and supports a GitHub Pages repository subdirectory. Do not add the SEMPER development folder or a CNAME file from another project.
 
-Features: Traditional/Simplified Chinese, Mandarin/Cantonese device text to speech, reading preferences, notes, progress, and offline reading. Device speech requires a compatible browser and the chosen voice. Offline speech requires an installed voice. Notes and progress stay in the browser on that device and website origin; they will not transfer from the private Sites preview.
+Features: Traditional/Simplified Chinese, Mandarin/Cantonese device text to speech, reading preferences, progress, and offline reading. Device speech requires a compatible browser and the chosen voice. Offline speech requires an installed voice. Progress stays in the browser on that device and website origin; it will not transfer from the private Sites preview.
 
 For later app updates, increment VERSION in sw.js whenever cached application files change, then upload the changed files. Returning visitors can use the update prompt.
 

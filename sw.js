@@ -1,4 +1,4 @@
-const VERSION='advent-2026-v4';
+const VERSION='advent-2026-v5';
 const SHELL=['./','./index.html','./style.css','./app.js','./language.js','./speech.js','./t2s.json','./days.json','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./fonts/ming.woff2','./fonts/ming-sc.woff2','./FONT-LICENSE.txt'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(VERSION).then(cache=>cache.addAll(SHELL))));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{await Promise.all((await caches.keys()).filter(k=>k.startsWith('advent-2026-')&&k!==VERSION).map(k=>caches.delete(k)));await self.clients.claim();})()));
